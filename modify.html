@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="modify.css">
+    <title>商品編輯</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+                <div class="logo">
+                        <a href="manage.html"><img id="navLogo" width="122" height="48" 
+                            src="https://s1.lativ.com.tw/images/logo-2011.png?18472" alt="lativ米格國際"></a>
+                </div>
+                <div class="function">
+                    <ul>
+                        <li class="home"><a  href="home.html">商品首頁</a></li>
+                        <li class="home"><a  href="manage.html">管理商品</a></li>
+                        <li><a href="new.html">新增商品</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+        </div>
+        <div class="content">
+            <div class="product">
+                <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    
+<script>
+    {
+        var x = parseInt(location.hash.substr(1));
+        var xhr = new XMLHttpRequest();    //產生新的網路請求
+            xhr.open('get', "http://localhost:3000/goods/"+x , true);
+            xhr.send();
+            xhr.onload = function () {  //當資料回傳時才執行底下程式
+        var data = JSON.parse(xhr.responseText);
+        var str = "";
+        str += "<img src='"+data.img+"'>";
+        str += "<table><tr><td>商品名稱</td><td><input type='text' name='title' class='title' value='"+data.title+"'></td></tr>";
+        
+        str += "<tr><td>目前商品尺寸</td><td>";
+        for(var i=0;i<data.size.length;i++){
+            str += data.size[i]+"&emsp;"    ;
+        } 
+        str += "</td></tr><tr><td>修改商品尺寸</td><td><input type='checkbox' name='size' class='size'value='S'>S"+
+            "<input type='checkbox' name='size' class='size'value='M'>M"+
+            "<input type='checkbox' name='size' class='size'value='L'>L"+
+            "<input type='checkbox' name='size' class='size'value='XL'>XL"+
+            "<input type='checkbox' name='size' class='size'value='XXL'>XXL</td></tr>";
+        str += "<tr><td>商品價格</td><td><input type='text' name='price' class='price' value='"+data.price+"'></td></tr>";
+        str += "<tr><td>商品圖片</td><td><input type='url' name='img' class='img'  value='"+data.img+"'></td></tr>";
+        str += "<tr><td>更多圖片1</td><td><input type='text' name='picture1' class='picture1' value='"+data.picture1+"'></td></tr>";
+        str += "<tr><td>更多圖片2</td><td><input type='text' name='picture2' class='picture2' value='"+data.picture2+"'></td></tr>";
+        str += "<tr><td>更多圖片3</td><td><input type='text' name='picture3' class='picture3' value='"+data.picture3+"'></td></tr>";
+        str += "<tr><td>更多圖片4</td><td><input type='text' name='picture4' class='picture4' value='"+data.picture4+"'></td></tr></table>";
+        str += "<input type='submit' class='send' value='修改' onclick='modify()'></from>";
+            document.querySelector('.product').innerHTML = str;
+        }   
+}
+function modify(){
+        var title = document.querySelector('.title').value;
+        var img = document.querySelector('.img').value;
+        var size = document.getElementsByName('size');
+        var price = document.querySelector('.price').value;
+        var picture1 = document.querySelector('.picture1').value;
+        var picture2 = document.querySelector('.picture2').value;
+        var picture3 = document.querySelector('.picture3').value;
+        var picture4 = document.querySelector('.picture4').value;
+        var value = new Array();
+        for(var i = 0; i < size.length; i++ ){
+            if(size[i].checked)
+            value.push(size[i].value);
+        } 
+        var information = {};
+        information.title = title;
+        information.img = img;
+        information.size = value;
+        information.price = price;
+        information.picture1 = picture1;  
+        information.picture2 = picture2;
+        information.picture3 = picture3;
+        information.picture4 = picture4;
+        var x = parseInt(location.hash.substr(1));
+        var xhr = new XMLHttpRequest();
+        xhr.open('put', "http://localhost:3000/goods/"+x , true); 
+        xhr.setRequestHeader('Content-type','application/json');
+        var modification = JSON.stringify(information);
+        xhr.send(modification);
+        xhr.onload = function(){
+            window.location = "manage.html";
+        }
+}
+</script>
+</body>
+</html>

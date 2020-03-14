@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="manage.css">
+    <title>商品管理</title>
+</head>
+<body>
+    <div class="wrap">
+    <div class="header">
+            <div class="logo">
+                <a href="manage.html"><img id="navLogo" width="122" height="48" 
+                    src="https://s1.lativ.com.tw/images/logo-2011.png?18472" alt="lativ米格國際"></a>
+        </div>
+        <div class="function">
+            <ul>
+                <li class="home"><a  href="home.html">商品首頁</a></li>
+                <li class="home"><a  href="manage.html">管理商品</a></li>
+                <li><a href="new.html">新增商品</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="content">
+            <div class="product">
+                    <table class="list"></table>
+                    <div class="clear"></div>
+                </div>
+        </div>
+        <div class="footer">
+            <div class="page"></div>
+            <div class="clear"></div>
+        </div>
+</div>
+    
+<script>
+    var x = new XMLHttpRequest(); 
+        x.open('get', "http://localhost:3000/goods" , true);
+        x.send(); //傳送()
+        x.onload = function (){
+            var data = JSON.parse(x.responseText);
+            var page="";
+                for(var k=0;k<Math.ceil(data.length/8);k++){
+                    page += "<input type='button' value='"+(k+1)+"'onclick='product("+k+")'>";
+                }
+            document.querySelector('.page').innerHTML = page;
+        }
+        var xhr = new XMLHttpRequest();    //產生新的網路請求
+            xhr.open('get', "http://localhost:3000/goods?_start=0&_limit=8" , true);
+            xhr.send(); //傳送()
+            xhr.onload = function () {  //當資料回傳時才執行底下程式
+                var data = JSON.parse(xhr.responseText);
+                var str = "";
+                    str += "<tr class='top'><td width=50>編號</td><td width=130>照片</td><td width=350>商品名稱</td><td width=250>尺寸</td>"+
+                        "<td width=120>價錢</td><td width=100>修改</td><td width=100>刪除</td></tr>";
+                for(var i=0;data.length>i;i++){
+                    str +="<tr>";
+                    str += "<td width=80>"+data[i].id+"</td>";
+                    str += "<td width=130><img class='smallImg' src='"+data[i].img+"'></td>";
+                    str += "<td width=350>"+data[i].title+"</td><td width=250>";
+                    for(var j=0;j < data[i].size.length;j++){
+                        str += data[i].size[j]+"&ensp;";
+                    }
+                  //  console.log(data[i]);
+                    str += "</td><td width=120>NT$ "+data[i].price+"</td>";
+                    str +="<td width=100><a href='modify.html#"+data[i].id+"'>修改</a></td>";
+                    str +="<td width=100><input class='btn' type='button' value='刪除'"+
+                    "onclick='deleteProduct("+data[i].id+")'></td>";
+                    str +="</tr>";
+                }
+            document.querySelector('.list').innerHTML = str;
+    }
+    function product(page) {
+    var xhr = new XMLHttpRequest();    //產生新的網路請求
+                xhr.open('get', "http://localhost:3000/goods?_page="+(page+1)+"&_limit=8" , true);
+                xhr.send(); //傳送()
+                xhr.onload = function () {  //當資料回傳時才執行底下程式
+            var data = JSON.parse(xhr.responseText);
+            var str = "";
+                    str += "<tr class='top'><td width=50>編號</td><td width=130>照片</td><td width=350>商品名稱</td><td width=250>尺寸</td>"+
+                        "<td width=120>價錢</td><td width=100>修改</td><td width=100>刪除</td></tr>";
+                for(var i=0;data.length>i;i++){
+                    str +="<tr>";
+                    str += "<td width=80>"+data[i].id+"</td>";
+                    str += "<td width=130><img class='smallImg' src='"+data[i].img+"'></td>";
+                    str += "<td width=350>"+data[i].title+"</td><td width=250>";
+                    for(var j=0;j < data[i].size.length;j++){
+                        str += data[i].size[j]+"&ensp;";
+                    }
+                  //  console.log(data[i]);
+                    str += "</td><td width=120>NT$ "+data[i].price+"</td>";
+                    str +="<td width=100><a href='modify.html#"+data[i].id+"'>修改</a></td>";
+                    str +="<td width=100><input class='btn' type='button' value='刪除'"+
+                    "onclick='deleteProduct("+data[i].id+")'></td>";
+                    str +="</tr>";
+                }
+                document.querySelector('.list').innerHTML = str;
+            }
+     }
+        // var xhr = new XMLHttpRequest();    //產生新的網路請求
+        //     xhr.open('get', "http://localhost:3000/goods" , true);
+        //     xhr.send(); //傳送()
+        //     xhr.onload = function () {  //當資料回傳時才執行底下程式
+        //         var data = JSON.parse(xhr.responseText);
+        //         var str = "";
+        //             str += "<tr class='top'><td width=150></td><td width=380>商品名稱</td><td width=250>尺寸</td>"+
+        //                 "<td width=120>價錢</td><td width=100>修改</td><td width=100>刪除</td></tr>";
+        //         for(var i=0;data.length>i;i++){
+        //             str +="<tr>";
+        //             str += "<td width=150><img class='smallImg' src='"+data[i].img+"'></td>";
+        //             str += "<td width=380>"+data[i].title+"</td><td width=250>";
+        //             for(var j=0;j < data[i].size.length;j++){
+        //                 str += data[i].size[j]+"&ensp;";
+        //             }
+        //           //  console.log(data[i]);
+        //             str += "</td><td width=120>NT$ "+data[i].price+"</td>";
+        //             str +="<td width=100><a href='modify.html#"+data[i].id+"'>修改</a></td>";
+        //             str +="<td width=100><input class='btn' type='button' value='刪除'"+
+        //             "onclick='deleteProduct("+data[i].id+")'></td>";
+        //             str +="</tr>";
+        //         }
+                
+        //         document.querySelector('.list').innerHTML = str;  
+        //     }
+ 
+function deleteProduct(id) {
+     var xhr = new XMLHttpRequest();    //產生新的網路請求
+     xhr.open('delete', "http://localhost:3000/goods/"+id , true);
+     xhr.send(); 
+     xhr.onload = function (){
+        var xhr = new XMLHttpRequest();    //產生新的網路請求
+            xhr.open('get', "http://localhost:3000/goods" , true);
+            xhr.send(); //傳送()
+            xhr.onload = function () {  //當資料回傳時才執行底下程式
+                window.location = "manage.html";
+            }
+        }
+}
+</script>
+</body>
+</html>

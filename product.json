@@ -1,0 +1,314 @@
+{
+  "goods": [
+    {
+      "title": "嫘縈無袖襯衫-女",
+      "img": "https://s3.lativ.com.tw/i/40405/40405011/4040501_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": "390",
+      "picture1": "https://s1.lativ.com.tw/i/40405/40405_D_21.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40405/40405_D_91.jpg",
+      "picture3": "https://s3.lativ.com.tw/i/40405/40405_D_92.jpg",
+      "picture4": "https://s4.lativ.com.tw/i/40405/40405_D_25.jpg",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "亞麻混紡V領長版衫-女",
+      "img": "https://s3.lativ.com.tw/i/40467/40467021/4046702_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 450,
+      "picture1": "https://s1.lativ.com.tw/i/40467/40467_D_21.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40467/40467_D_23.jpg",
+      "picture3": "https://s1.lativ.com.tw/i/CommonPicture/1939/05_TW.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/40467/40467_D_25.jpg"
+    },
+    {
+      "id": 3,
+      "title": "牛津短袖襯衫-女",
+      "img": "https://s3.lativ.com.tw/i/40472/40472051/4047205_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "price": 290,
+      "picture1": "https://s1.lativ.com.tw/i/40472/40472_D_21.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40472/40472_D_82.jpg",
+      "picture3": "https://s1.lativ.com.tw/i/40472/40472_D_25.jpg",
+      "picture4": "https://s3.lativ.com.tw/i/40472/40472_D_27.jpg"
+    },
+    {
+      "id": 4,
+      "title": "經典格紋短袖襯衫-女",
+      "img": "https://s3.lativ.com.tw/i/40451/40451011/4045101_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "price": 249,
+      "picture1": "https://s1.lativ.com.tw/i/40451/40451_D_21.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40451/40451_D_32.jpg",
+      "picture3": "https://s2.lativ.com.tw/i/40451/40451_D_25.jpg",
+      "picture4": "https://s1.lativ.com.tw/i/CommonPicture/1559/19SS_760WASH_TW.jpg"
+    },
+    {
+      "id": 5,
+      "title": "竹節棉配色T恤-女",
+      "img": "https://s3.lativ.com.tw/i/40712/40712031/4071203_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "price": 199,
+      "picture1": "https://s1.lativ.com.tw/i/40712/40712_D_21.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40712/40712_D_22.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40712/40712_D_24.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/CommonPicture/1559/19SS_760WASH_TW.jpg"
+    },
+    {
+      "title": "皮克斯系列印花T恤-04-女",
+      "img": "https://s3.lativ.com.tw/i/40863/40863011/4086301_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 233,
+      "picture1": "https://s1.lativ.com.tw/i/40863/40863_D_71.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40863/40863_D_72.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/CommonPicture/1999/TOY_02_TW.jpg",
+      "picture4": "https://s1.lativ.com.tw/i/CommonPicture/1559/19SS_760WASH_TW.jpg",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "title": "皮克斯系列印花T恤-05-女",
+      "img": "https://s3.lativ.com.tw/i/40792/40792011/4079201_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "price": 233,
+      "picture1": "https://s1.lativ.com.tw/i/40792/40792_D_21.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40792/40792_D_53.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40792/40792_D_23.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/CommonPicture/2028/M_02_TW.jpg"
+    },
+    {
+      "id": 9,
+      "title": "高腰雪紡細褶裙-女",
+      "img": "https://s3.lativ.com.tw/i/40362/40362031/4036203_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "price": 550,
+      "picture1": "https://s1.lativ.com.tw/i/40362/40362_D_81.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40362/40362_D_82.jpg",
+      "picture3": "https://s3.lativ.com.tw/i/40362/40362_D_24.jpg",
+      "picture4": "https://s4.lativ.com.tw/i/40362/40362_D_25.jpg"
+    },
+    {
+      "id": 10,
+      "title": "輕便格紋九分褲-女",
+      "img": "https://s3.lativ.com.tw/i/40358/40358011/4035801_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 490,
+      "picture1": "https://s1.lativ.com.tw/i/40358/40358_D_21.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40358/40358_D_23.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40358/40358_D_24.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/40358/40358_D_26.jpg"
+    },
+    {
+      "id": 11,
+      "title": "牛仔刷破短褲-女",
+      "img": "https://s3.lativ.com.tw/i/40299/40299011/4029901_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 390,
+      "picture1": "https://s2.lativ.com.tw/i/40299/40299_D_82.jpg",
+      "picture2": "https://s4.lativ.com.tw/i/40299/40299_D_24.jpg",
+      "picture3": "https://s1.lativ.com.tw/i/CommonPicture/1923/06_MEN_WOMEN_TW.jpg",
+      "picture4": "https://s3.lativ.com.tw/i/40299/40299_D_26.jpg"
+    },
+    {
+      "id": 12,
+      "title": "牛仔吊帶裙-女",
+      "img": "https://s3.lativ.com.tw/i/40303/40303011/4030301_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "price": 490,
+      "picture1": "https://s1.lativ.com.tw/i/40303/40303_D_21.jpg",
+      "picture2": "https://s4.lativ.com.tw/i/40303/40303_D_24.jpg",
+      "picture3": "https://s1.lativ.com.tw/i/CommonPicture/1923/06_MEN_WOMEN_TW.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/40303/40303_D_25.jpg"
+    },
+    {
+      "id": 13,
+      "title": "櫻桃小丸子印花T恤-10-女",
+      "img": "https://s3.lativ.com.tw/i/41077/41077011/4107701_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "price": 233,
+      "picture1": "https://s1.lativ.com.tw/i/41077/41077_D_21.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/41077/41077_D_22.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/CommonPicture/2016/maruko_01_TW.jpg",
+      "picture4": "https://s1.lativ.com.tw/i/CommonPicture/2016/maruko_02_TW.jpg"
+    },
+    {
+      "id": 14,
+      "title": "細紋雪紡洋裝-女",
+      "img": "https://s3.lativ.com.tw/i/40432/40432011/4043201_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 590,
+      "picture1": "https://s1.lativ.com.tw/i/40432/40432_D_21.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40432/40432_D_23.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40432/40432_D_24.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/40432/40432_D_26.jpg"
+    },
+    {
+      "id": 15,
+      "title": "垂墜風九分寬褲-女",
+      "img": "https://s3.lativ.com.tw/i/40360/40360021/4036002_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 490,
+      "picture1": "https://s1.lativ.com.tw/i/40360/40360_D_31.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40360/40360_D_23.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40360/40360_D_24.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/40360/40360_D_26.jpg"
+    },
+    {
+      "id": 16,
+      "title": "多色牛仔吊帶短褲-女",
+      "img": "https://s3.lativ.com.tw/i/40277/40277031/4027703_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 499,
+      "picture1": "https://s1.lativ.com.tw/i/40277/40277_D_21.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40277/40277_D_22.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40277/40277_D_24.jpg",
+      "picture4": "https://s1.lativ.com.tw/i/40277/40277_D_25.jpg"
+    },
+    {
+      "id": 17,
+      "title": "史努比輕柔loungewear-女",
+      "img": "https://s3.lativ.com.tw/i/40713/40713031/4071303_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 399,
+      "picture1": "https://s1.lativ.com.tw/i/40713/40713_D_21.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40713/40713_D_22.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40713/40713_D_24.jpg",
+      "picture4": "https://s1.lativ.com.tw/i/40713/40713_D_25.jpg"
+    },
+    {
+      "id": 18,
+      "title": "軟牛仔九分束口褲-女",
+      "img": "https://s3.lativ.com.tw/i/40315/40315021/4031502_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": 399,
+      "picture1": "https://s1.lativ.com.tw/i/40315/40315_D_31.jpg",
+      "picture2": "https://s2.lativ.com.tw/i/40315/40315_D_32.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40315/40315_D_24.jpg",
+      "picture4": "https://s1.lativ.com.tw/i/40315/40315_D_25.jpg"
+    },
+    {
+      "title": "純棉綁帶條紋洋裝-女",
+      "img": "https://s3.lativ.com.tw/i/40143/40143021/4014302_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "price": "299",
+      "picture1": "https://s1.lativ.com.tw/i/40143/40143_D_41.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40143/40143_D_43.jpg",
+      "picture3": "https://s4.lativ.com.tw/i/40143/40143_D_24.jpg",
+      "picture4": "https://s1.lativ.com.tw/i/40143/40143_D_25.jpg",
+      "id": 19
+    },
+    {
+      "title": "牛仔長袖襯衫-女",
+      "img": "https://s3.lativ.com.tw/i/40479/40479011/4047901_500.jpg",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "price": "450",
+      "picture1": "https://s1.lativ.com.tw/i/40479/40479_D_21.jpg",
+      "picture2": "https://s3.lativ.com.tw/i/40479/40479_D_23.jpg",
+      "picture3": "https://s1.lativ.com.tw/i/40479/40479_D_25.jpg",
+      "picture4": "https://s2.lativ.com.tw/i/40479/40479_D_26.jpg",
+      "id": 20
+    }
+  ]
+}

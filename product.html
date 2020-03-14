@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lativProject.css">
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="lightbox.min.js"></script>
+    <title>lativ 商品資訊</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                    <a href="home.html"><img id="navLogo" width="122" height="48" 
+                        src="https://s1.lativ.com.tw/images/logo-2011.png?18472" alt="lativ米格國際"></a>
+            </div>
+                <div class="navSearch">
+                    <span class="search">
+                        <form action="#" method="get" >
+                            <input  placeholder="SEARCH" maxlength="100" type="text" value=""  id="search">
+                            <input type="submit" class="search_btn" value="">
+                        </form>
+                    </span>
+                </div>
+            <ul class="nav">
+                    <li class="women"><a rel="WOMEN" href="#">WOMEN</a></li>
+                    <li class="men"><a rel="MEN" href="#">MEN</a></li>
+                    <li class="kids"><a rel="KIDS" href="#">KIDS</a></li>
+                    <li class="baby"><a rel="BABY" href="#">BABY</a></li>
+                    <li class="sports"><a rel="SPORTS" href="#">SPORTS</a></li>
+                </ul>
+            <ul class="topnav">
+                <li class="epaper"><a href="#">訂閱電子報</a></li>
+                <li class="member"><a href="#">登入/註冊</a></li>
+                <li class="cart"><a href="#">0個商品</a></li>
+
+            </ul>
+                <div class="clear"></div>
+        </div>
+        
+        <div class="content">
+            <div class="catalog">
+                    <ul class="sale">
+                    <li><a href="#"><h2>女裝新品 & 熱銷</h2></a></li>
+                    <ul>
+                        <ul class="menuOnsale">
+                            <li><a href="#">週末限定．2件 290</a></li>
+                            <li><a href="#">換季特惠．限時 5折起</a></li>
+                            <li><a href="#">活力一夏．3件75折起</a></li>
+                            <li><a href="#">人氣大賞．2件 580</a></li>
+                            <li><a href="#">舒適首選．2件 380</a></li>
+                            <li><a href="#">羽絨特惠．均一價888</a></li>
+                            <li><a href="#">超值精選．2件 198</a></li>
+                        </ul>
+                    </ul>
+                    <li><a href="#"><h2>上身類</h2></a></li>
+                    <ul class="body">
+                      <li><a href="#">印花短T</a></li>
+                      <li><a href="#">印花長T</a></li>
+                      <li><a href="#">短袖/背心</a></li>
+                      <li><a href="#">雪紡/輕柔</a></li>
+                      <li><a href="#">Pima棉</a></li>
+                      <li><a href="#">POLO衫</a></li>
+                      <li><a href="#">七分/長袖</a></li>
+                      <li><a href="#">長版上衣</a></li>
+                      <li><a href="#">厚棉系列</a></li>
+                      <li><a href="#">FLEECE</a></li>
+                    </ul>
+                    <li><a href="#"><h2>襯衫類</h2></a></li>
+                    <ul class="body">
+                      <li><a href="#">休閒襯衫</a></li>
+                      <li><a href="#">法蘭絨襯衫</a></li>
+                    </ul>
+                    <li><a href="#"><h2>襯衫類</h2></a></li>
+                    <ul class="body">
+                      <li><a href="#">休閒襯衫</a></li>
+                      <li><a href="#">法蘭絨襯衫</a></li>
+                      <li><a href="#">法蘭絨襯衫</a></li>
+                    </ul>
+                    <li><a href="#"><h2>針織衫</h2></a></li>
+                    <ul class="body">
+                      <li><a href="#">針織/毛衣</a></li>
+                      <li><a href="#">美麗諾</a></li>
+                    </ul>
+                    <li><a href="#"><h2>外套類</h2></a></li>
+                    <ul class="body">
+                      <li><a href="#">休閒外套</a></li>
+                      <li><a href="#">機能外套</a></li>
+                      <li><a href="#">FLEECE外套</a></li>
+                      <li><a href="#">極輕羽絨</a></li>
+                      <li><a href="#">保暖羽絨</a></li>
+                      <li><a href="#">西裝/大衣</a></li>
+                    </ul>
+                 </ul>
+                 <div class="clear"></div>
+            </div>
+           
+            <div class="product">
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+            <div class="contact">
+                <a href="#">聯絡lativ</a>
+                <a href="#">購物說明</a>
+                <a href="#">最新消息</a>
+                <a href="#" id="brand">品牌日誌</a>
+            </div>
+            <div class="privacy">
+             <a href="#" id="usingWeb">網站使用條款</a>
+             <a href="#">隱私權政策</a>
+             <a href="#">免責聲明</a>
+             <a href="#" >© 2019 lativ</a>
+            </div>
+        </div>
+    </div>
+    <script>
+    
+        var x = parseInt(location.hash.substr(1));
+        var xhr = new XMLHttpRequest();    //產生新的網路請求
+            xhr.open('get', "http://localhost:3000/goods/"+x , true);
+            xhr.send(); //傳送()
+            xhr.onload = function () {  //當資料回傳時才執行底下程式
+        var data = JSON.parse(xhr.responseText);
+        var str="<div class='productInfo'>";
+            str +=   "<div class='big_img'>"+
+                "<a href='"+data.img+"' data-lightbox='example1'><img class='productPhoto' src='"+data.img+"' alt=''><img class='photoBig' src='https://s3.lativ.com.tw/images/btn_zoom20.gif' alt=''></a></div>";           
+            str += "<div class='productDetail'><div class='productName'><h1>"+data.title+"</h1></div>";
+            str += "<div class='productPrice'><span class='nt'>NT $ </span><span class='price'>"+data.price+"</span>"+
+            "<span class='recommendation'><a href='#'>職場推薦，任選350起 >></a></span></div><div class='clear'></div></div>";
+            str += "<div class='size'>";
+             for(var j=0;j<data.size.length; j++){
+                 str += "<span class='productSize'>"+data.size[j]+"</span>";
+             }
+            str += "<div class='moreInfo'><ul><li class='comment'><a href='#'>評價</a></li>"+
+            "<li class='illustration'><a href='#'>產品說明與尺寸表</a></li>"+
+            "<li class='collection'><a href='#'>收藏商品</a></li></ul></div></div>";
+            str += "<div class='shopping'><p>數量</p><input type='button' class='btnAdd' onclick='add()' value='+'><div class='num'>0</div>"+
+            "<input type='button' class='btnLess' onclick='less()' value='-'><a href='#'>加入購物車</a>"+
+            "<span class='discount'>週末限定【 超商取貨．680免運 】</span><div class='clear'></div></div>";
+            str += "<div class='clear'></div></div>";
+            str += "<div class='morePicture'><img src='"+data.picture1+"'>"+
+            "<img src='"+data.picture2+"'><img src='"+data.picture3+"'><img src='"+data.picture4+"'></div>";
+            document.querySelector('.product').innerHTML = str;
+    }
+    var num =0;
+    function add(){
+        num+=1;
+        document.querySelector('.num').textContent = num;
+    }
+    function less(){
+        if(num>0){
+            num-=1;
+            document.querySelector('.num').textContent = num;
+        }
+        else{
+            document.querySelector('.num').textContent = 0;
+        } 
+    }
+    </script>
+</body>
+</html>
+

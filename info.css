@@ -1,0 +1,200 @@
+.product{
+    padding-top:35px;
+    float: left;
+    width: 1000px;
+    padding-left: 30px;
+}
+.productInfo{
+    float: left;
+}
+.productPhoto{
+    width: 500px;
+    float: left;
+   
+}
+.photoBig{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.catalog{
+    float: left;
+    width: 135px;
+}
+.productName{
+    float: left;
+    color: #666;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 300px;;
+}
+.productName h1{
+    margin-left: 30px;
+    padding-top: 15px;
+}
+.productPrice{
+    float: right;
+    width: 160px;
+    margin-top: 20px;
+    font-family: Arial;
+    
+}
+.size{
+    float: left;
+    width: 440px;
+    border-top: 2px solid  #eee;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid  #eee;
+}
+.productDetail{
+    float: left;
+    width: 470px;
+}
+.nt{
+    font-size: 14px;
+    margin-right: 5px;
+    color: #ea0000;
+    margin-top: 10px;
+    float: left;
+    font-weight: bold;
+}
+.price{
+    float: right;
+    font-size: 60px;
+    line-height: 1;
+    color: #ea0000;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.recommendation{
+    float: left;
+    
+}
+.recommendation a{
+    width: 148px;
+    display: inline-block;
+    line-height: 15px;
+    color: #fff;
+    background-color: #ea0000;
+    padding: 6px 6px 6px 6px;
+}
+.recommendation a:hover{
+    background-color: #83521e;
+}
+.productSize {
+    display: inline-block;
+    width: 25px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 15px;
+    margin: 16px 16px 0 10px;
+    background-color: #eee;
+}
+.moreInfo{
+    padding-top: 20px;
+    float: right;
+}
+.moreInfo a{
+    line-height: 25px;
+    height: 25px;
+    margin-left: 40px;
+}
+.moreInfo .comment a{
+    display: inline-block;
+    color:#858585;
+    padding-left: 30px;
+    background: url(https://s1.lativ.com.tw/images/icon_comment.png) no-repeat 0 50%;
+    cursor: pointer;
+}
+.moreInfo .illustration a{
+    display: inline-block;
+    color:#858585;
+    padding-left: 30px;
+    background: url(https://s1.lativ.com.tw/images/icon_size.png) no-repeat  0 -1px;
+    cursor: pointer;   
+}
+.moreInfo .collection a{
+    display: inline-block;
+    color:#858585;
+    padding-left: 30px;
+    background: url(https://s1.lativ.com.tw/images/star_hollow.png) no-repeat no-repeat -2px -1px;;
+    cursor: pointer;
+}
+.moreInfo li{
+    float: left;
+}
+.morePicture{
+    float: left;
+    margin-top: 20px;
+    margin-left: 125px;
+}
+.morePicture img{
+    padding-top: 30px;
+}
+.shopping{
+    float: left;
+    width: 440px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.shopping p{
+    float: left;
+    width: 24px;
+    color: #666;
+    font-size: 12px;
+    padding-top:25px; 
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.shopping .num{
+    float: left;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    margin-top: 16px;
+}
+.shopping input{
+    display: block;
+    margin-top: 16px;
+    float: left;
+    width: 20px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    color: #ccc;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.shopping a{
+    float: left;
+    display: block;
+    width: 185px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Microsoft JhengHei","微軟正黑體";
+    background-color: #83521e;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-left: 30px;
+}
+.shopping .discount{
+    float: left;
+    color:#c14948;
+    width: 440px;
+    margin-top: 35px;
+    padding-left: 10px;
+}

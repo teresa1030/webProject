@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration:none;
+}
+.clear{
+    clear: both;
+}
+.wrap{
+    width: 1180px;
+    font-size: 12px;
+    font-family: "Verdana","新細明體",Geneva,Tahoma,sans-serif;
+    color: #706e6c;
+    margin: 0 auto;
+    /* padding: 0 40px; */
+  }
+.logo{
+    float: left;
+    width: 122px;
+    margin-top: 48px;
+}
+img#navLogo{
+    float: left;
+}
+.navSearch{
+    float: right;
+    margin-top: 24px;
+}
+.search{
+    overflow: hidden;
+    /* margin-top: 25px; */
+    margin-right: 0;
+    float: right;
+}
+.search #search {
+    color: #666;
+    border: 1px #ccc solid;
+    width: 185px;
+    height: 23px;
+    float: right;
+    padding-left: 5px;
+    line-height: 2.2;
+    position: relative;
+    font-size: 11px;
+}
+.search .search_btn {
+    position: absolute;
+    width: 40px;
+    height: 27px;
+    right: 178px;
+    background: transparent url(https://s1.lativ.com.tw/images/btn_search.gif) no-repeat center center;
+    border: none;
+    cursor: pointer;
+}
+.nav {
+    text-align: center;
+    height: 28px;
+    display: inline-block;
+    border-bottom: 0 #e6e6e6 solid;
+    margin-top: 67px;
+    margin-left: 42px;
+}
+.nav li {
+    float: left;
+    list-style: none;
+}
+.nav li a {
+    height: 28px;
+    width: 132px;
+    position: relative;
+    text-indent: -9000px;
+    display: block;
+    background: transparent url(https://s1.lativ.com.tw/images/nav-menus.gif?18721) no-repeat top left;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nav .women a{
+    background-position: 0px -56px;
+}
+.nav .men a{
+    background-position:-132px 0;
+}
+.nav .kids a{
+    background-position: -264px 0;
+}
+.nav .baby a{
+    background-position: -396px 0;
+}
+.nav .sports a{
+    background-position: -528px 0;
+}
+.topnav{
+    float: right;
+    margin-top: -22px;
+    margin-right: -9px;
+    padding-left: 10px;
+}
+.topnav a:hover{
+    text-decoration:underline;
+}
+.topnav a{
+    color: #4d3126;
+}
+.topnav li {
+    color: #4d3126;
+    height: 12px;
+    display: inline-block;
+    text-align: center;
+    padding-right: 10px;
+}
+.member{
+    border-left: 1px dotted #d0d0d0;
+    padding-left: 12px;
+    padding-right: 10px;
+}
+.cart{
+    border-left: 1px dotted #d0d0d0;
+    padding-left: 12px;
+    padding-right: 10px;
+}
+.cart a {
+    background-image: url(https://s1.lativ.com.tw/images/ShoppingCart.gif);
+    background-repeat: no-repeat;
+    background-position: 0 -3px;
+    padding-left: 30px;
+}
+.sale{
+    float: left;
+    margin-top:27px;
+}
+.sale li{
+    list-style: none; 
+}
+.sale h2{
+    color: #555;
+    font-weight: bolder;
+    background: transparent url(https://s1.lativ.com.tw/images/sidenav_h2icon.gif) no-repeat 0px 5px;
+    display: block;  
+    font-weight: bold;
+    padding: 0 0 3px 10px;
+}
+.menuOnsale{
+    border-bottom: 1px #f0f0f0 solid;
+    padding-right: 1px ;
+    margin-top:8px; 
+    line-height: 13px;
+    padding-bottom: 15px;  
+    margin-bottom:15px;      
+}
+.menuOnsale li  {
+    text-align: -webkit-match-parent;
+    padding-top:10px;
+}
+.menuOnsale li a {
+    color: #83521e;
+    background: transparent url(https://s1.lativ.com.tw/images/sidenav_list_icon.gif) no-repeat 0 5px;
+    padding: 0 0 3px 10px;
+    display: inline;
+}
+.body{
+    margin-bottom: 15px;
+}
+.body li a{
+    color: #555;
+    background: transparent url(https://s1.lativ.com.tw/images/sidenav_list_icon.gif) no-repeat 0 5px;
+    padding: 0 0 3px 10px;
+    display: inline;
+    line-height: 23px;
+}
+.footer{
+    margin-top: 100px;
+}
+.footer{
+    font-size: 12px;
+    color: #706e6c;
+    margin-top: 100px;
+    border-top: 1px #f0f0f0 solid;
+    padding-top:30px;
+    padding-bottom:70px;
+}
+.footer a:hover{
+    text-decoration:underline;
+}
+
+.contact{
+    float: left;
+}
+.privacy{
+    float: right;
+    
+}
+.contact a{
+    padding: 0 11px;
+    border-right: 1px solid #706e6c;
+    color: #706e6c;
+}
+.privacy a{
+    padding: 0 11px;
+    border-left: 1px solid #706e6c;
+    color: #706e6c;
+}
+#brand{
+    border-right: 0px solid #706e6c;
+}
+#usingWeb {
+    border-left: 0px solid #706e6c;
+}

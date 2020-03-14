@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration:none;
+}
+.clear{
+    clear: both;
+}
+.wrap{
+    width: 1180px;
+    font-size: 12px;
+    font-family: "Verdana","新細明體",Geneva,Tahoma,sans-serif;
+    color: #706e6c;
+    margin: 0 auto;
+  }
+  .header{
+      padding-top: 48px;
+      padding-bottom: 15px;
+      border-bottom:2px solid #ccc;
+  }
+  .logo{
+      float: left;
+      width: 400px;
+  }
+  .function{
+      float: right;
+      margin-top: 25px;
+  }
+  .function li{
+      float: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 18px;
+      font-weight: bolder;
+      font-family: 微軟正黑體;  
+  }
+  .function li a{
+      color: #8B4513 ;
+  }
+  .home{
+      border-right:1px solid #ccc;
+  }
+  /* manage */
+  .product{
+      margin-top: 20px;
+  }
+  .smallImg{
+      width: 120px;;
+  }
+  .list{
+      margin: 0 auto;
+      text-align: center;
+      font-size:25px;
+      font-family: 微軟正黑體;
+  }
+  .list td{
+    vertical-align:middle;
+    height: 120px;
+    border-top: 1px solid #8B4513;
+    padding: 15px 0 15px 0;
+  }
+  .list .top td{
+    height: 40px;
+    font-weight: bolder;
+    color: #706e6c;
+    border:0;
+  }
+  .list a{
+      color: #8B4513;
+      font-weight: bolder;
+  }
+  .list input{
+    font-weight: bolder;
+      color: #8B4513;
+      border: 0;
+      background-color: #ffffff;
+      font-size: 25px;
+      font-family: 微軟正黑體;
+  }
+  .footer{
+      margin-top: 100px;
+  }
+  .page{
+    text-align: center;
+    margin: 10px;
+}
+.page input{
+    background:none;
+    border: 0;
+    margin: 10px;
+    color: #A0522D;
+    font-size: 18px;
+}
+.page input:hover{
+    font-weight: bolder;
+    font-size: 18px;
+}
+/* modify */
